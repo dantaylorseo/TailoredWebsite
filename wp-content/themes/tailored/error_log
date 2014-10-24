@@ -1,0 +1,1 @@
+[02-Jun-2014 10:02:26 Europe/London] PHP Fatal error:  Call to undefined function get_header() in /home/client/devsite/wp-content/themes/tailored/index.php on line 1

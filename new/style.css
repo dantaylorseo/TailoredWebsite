@@ -1,0 +1,122 @@
+@charset "utf-8";
+body {
+  padding-top: 60px;
+  background-color: #efecec;
+}
+#page-header h1 {
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	clear: both;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 15px;
+}
+.navbar-fixed-top .navbar-brand {
+    max-width: 70%;
+}
+.navbar-fixed-top .navbar-brand img {
+	max-width: 100%;
+	height: auto;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.navbar {
+	min-height: 60px;
+	margin-bottom: 0;
+	border-bottom: 1px solid transparent;
+}
+.navbar-inverse {
+	background-color:#efecec ;
+	border-color: #333;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color:#212121;
+	text-transform:uppercase;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav li a:hover {
+	background-color: transparent;
+	color: #00ccff;	
+}
+#page-header {
+	height: auto;
+	padding: 80px 0;
+	background-image: url(images/mast.png);
+	background-size: cover;
+	min-height: 201px;
+	position:relative;
+}
+#main { 
+	margin-top: 30px;
+}
+#breadcrumb {
+	background-color: #fff;
+}
+.breadcrumb {
+	padding: 8px 15px;
+	margin-bottom: 0px;
+	list-style: none;
+	background-color: #fff;
+	border-radius: 4px;
+}
+#content h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #303030;
+	margin: 15px 0px;
+}
+.panel h1 {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #303030;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.panel {
+	padding: 0 15px;
+}
+#footer {
+	color: #8b8b8d;
+	background: #000 url(images/border.png) repeat-x;
+	padding: 14px 0 20px;
+	margin-top: 30px;
+}
+.footer-box a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px #222;
+	display: block;
+}
+@media (min-width: 992px) {
+	.container {
+		width: 1050px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1050px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		width: 1150px;
+	}
+}

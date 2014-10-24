@@ -1,0 +1,668 @@
+/*
+Theme Name: Hand Picked Beers	
+Theme URI: 
+Author: Dan Taylor
+Author URI: http://www.seowned.co.uk
+Description: Custom theme for Hand Picked Beers
+Version: 1.0
+License: Copyright 2012
+*/
+body {
+	background-color: #dcdcdc;
+	background-image:url(images/subtle_grunge.png);
+	background-repeat:repeat;
+}
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	position:relative;
+}
+.padding {
+	width: 965px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.borders {
+	background-color: #FFF;
+	border: 1px solid #666;
+}
+#header.padding {
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#beerboxes h2, .content h1, #content h1, #homecontent h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	font-family: 'Special Elite', cursive;
+	color: #003300;
+}
+#homecontent h1 {
+	padding: 10px;
+	background-color: #003300;
+	color: #fff;	
+}
+.homebox h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #003300;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.homebox {
+	float: left;
+	width: 231px;
+	margin-right: 10px;
+}
+.homebox.last {
+	margin-right: 0px!important;
+	float: right;
+	height: 245px;
+}
+#headerwrap , #footerwrap{
+	background-image:url(images/dark_fish_skin.png);
+	background-repeat:repeat;
+	background-color: #4b4b4b;
+	clear:both;
+}
+#nav , #sidebar{
+	float: left;
+	width: 270px;
+}
+#sidebar #nav { float: none; }
+#nav ul {
+}
+#nav ul li, .sidebox li, .footbox li {
+	list-style: none;
+}
+#nav ul li a {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCC;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #666;
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#nav ul li.current_page_item a , #nav ul li a:hover, .sidebox ul li a:hover, #nav ul li.current_page_parent a {
+	background-color: #4B4B4B;
+	color: #FFF;
+}
+#nav ul li.nav1 a {
+	font-family: 'Londrina Shadow', cursive;
+	font-size: 24px;
+}
+.nav2 a {
+	font-family: 'Ribeye Marrow', cursive;
+}
+#nav ul li.nav3 a{
+	font-family: 'Special Elite', cursive;
+}
+#nav ul li.nav4 a{
+	font-family: 'Miltonian', cursive;
+}
+.nav5 a {
+	font-family: 'Vast Shadow', cursive;
+}
+#nav ul li.nav6 a {
+	font-family: 'Londrina Sketch', cursive;
+	font-size:24px;
+}
+.nav7 a {
+	font-family: 'Rye', cursive;
+}
+#scroller , .content, #content{
+	float: right;
+	width: 650px;
+}
+#scroller {
+	float: right;
+	width: 681px;
+	overflow: hidden;
+	height: 284px;	
+	
+}
+#scrollim {
+	position: relative;
+}
+#scrollhead {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index:999;
+	background-color:rgba(25,25,25,0.80);
+	color: #fff;
+	font-family: 'Miltonian', cursive;
+	font-size:30px;
+	padding: 10px;	
+}
+#scrolltitle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index:999;	
+	background-color: rgba(3,46,10,0.83);
+	
+	padding: 10px;
+}
+#scrolltitle a {
+	color: #fff;
+	font-family: 'Londrina Sketch', cursive;
+	font-size:30px;
+	text-decoration:none;
+}
+#scrolltitle a span {
+	color: #fff;
+	font-family: 'Londrina Sketch', cursive;
+	font-size:30px;
+	text-decoration:none;
+}
+#scrolltitle a del span {
+	text-decoration:line-through;
+}
+.beerbox h4 {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #660200;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.beerbox a.button , .homebox input.button, .content .button, #content .button{
+	font-weight: bold;
+	color: #FFF;
+	display: block;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #b4e391; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+
+
+}
+.homebox .button {
+	margin-left: 10px;	
+	margin-top: 10px;
+}
+#beersub {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: auto;
+	font-size: 12px;
+	color: #FFF;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+.beerbox {
+	padding: 26px;
+	float: left;
+	width: 140px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #666;
+	text-align: center;
+}
+.beerbox.last {
+	border-right-style: none;
+}
+.homebox ol li , .sidebox ol li, .sidebox ul li {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+.homebox ol li a , .sidebox ol li a, .sidebox ul li a{
+	color: #666;
+	text-transform: uppercase;
+	padding: 10px;
+	display: block;
+}
+.homebox ul li {
+	color: #666;
+	text-transform: uppercase;
+	padding: 10px;
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+.homebox ul li:last-child {
+	border-bottom: none;
+}
+.tweets ul li a {
+	color: #4099FF;
+}
+.homebox li p {
+	padding: 0;
+}
+
+.blogs ul li a {
+	color: #666;
+}
+.sidebox {
+	margin-top: 10px;
+}
+.sidebox h2 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #003300;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.footbox {
+	float: left;
+	width: 33%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	font-size: 14px;
+}
+.footbox.middle {
+	padding-top: 50px;
+}
+.footbox.last p {
+	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+.footbox ul li a {
+	color: #FFF;
+	padding-bottom: 5px;
+	display: block;
+	padding-top: 5px;
+	width: 200px;
+	text-transform: uppercase;
+	text-align: left;
+}
+.homebox input {
+	border: 1px solid #000;
+	background-color: #666666;
+	width: 199px;
+	margin-left: 10px;
+	padding: 5px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.homebox p {
+	color: #666;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+#social {
+	float: right;
+}
+#logo {
+	float: left;
+	margin-top: 10px;
+}
+.clear {
+	clear: both;
+}
+#social {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+#social input {
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	color: #999999;
+	font-size: 16px;
+	height: 22px;
+	width: 166px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+}
+#social .nlbutton { 
+	background: #b4e391; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+
+
+	border: 1px solid #BFD255;
+    border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-weight: bold;
+    height: 32px;
+    padding: 0px;
+    text-align: right;
+    text-decoration: none;
+    width: 92px;
+	text-align: center;
+}#social form {
+	color: #FFF;
+	text-transform: uppercase;
+}
+.content ul, #content ul, #homecontent ul {
+	margin-left: 15px;
+}
+.content p, #content p, #homecontent p {
+	line-height: 20px;
+	color: #333;
+	padding: 10px;
+}
+li {
+	list-style: disc;
+	line-height: 20px;
+}
+.beerimage {
+	padding-right: 10px;
+	float: left;
+	width: 300px;
+}
+.beerinfo {
+	float: left;
+	padding: 10px;
+	width: 351px;
+}
+.beerinfo h2 {
+	font-size: 16px;
+	color: #660200;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.summary table {
+	width: 100%;
+	border: 1px solid #EEE;
+	border-collapse: collapse;
+}
+.summary th {
+	font-weight: bold;
+	color: #660200;
+	text-align: center;
+	border: 1px solid #EEE;
+	padding: 3px 10px;
+	background-color: #EEE;
+}
+.summary td {
+	border: 1px solid #EEE;
+	padding: 3px 10px;
+}
+.order {
+	float: right;
+	width: 345px;
+	border: 1px solid #EEE;
+	margin-right: 14px;
+}
+.content, #content {
+	margin-bottom: 10px;
+}
+.order h2 {
+	font-size: 16px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	background-color: #023300;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.order .button {
+	display: inline;
+	margin-left: 5px;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.order p {
+	float: left;
+	width: 155px;
+}
+.content h2.header, #content h2.header {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 5px 10px;
+	background-color: #660200;
+}
+.content div.product div.summary {
+	width: 337px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.content .summary p {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+.content #tabs ul li, .content #payment ul li {
+	list-style-type:none;
+}
+.content .product #tabs {
+	margin: 10px;
+}
+.content .products li {
+	list-style-type: none;
+	margin: 10px!important;
+	width: 206px;
+}
+.minicart {
+	float: left;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	position:relative;
+	top: 15px;
+	left: 90px;
+}
+.minicart .mini-cart.shortcode .basketpopup {
+	padding: 5px;
+	width: 200px;
+}
+.content .products li a img {
+	width: auto!important;
+	height: auto!important;
+}
+.content .button-alt {
+	margin: -2px 2px 0 0;	
+}
+.content .images {
+	padding: 10px 0px 0px 10px;
+}
+div.product #tabs ul.tabs a {
+	color:#999;
+}
+.content .jigoshop_message {
+	margin: 10px;
+}
+.content .col2-set .col-1, .content .col2-set .col-2 {
+	width: 100%;
+}
+.content #shiptobilling {
+	float: none;
+	margin-left: 10px!important;
+}
+.content .checkout .col-2 h3 {
+	float: none;
+}
+.content .cancel {
+	background:none;
+	background-color:#900;
+}
+.content #shiptobilling label {
+	font-size:1em;
+}
+.content h2 { 
+	padding: 0 10px;
+	font-size:16px;
+	color:#666;
+	margin-top: 10px;
+	text-transform:uppercase;
+}
+.content ul {
+	margin-left: 40px;
+	margin-bottom: 20px;	
+}
+#social img {
+	margin-top: 0px;	
+}
+.scroll { 
+	float:left;
+	width: 681px;
+}
+.scrolltext {
+	position: absolute;
+	top:130px;
+	background-color:#333;
+	opacity: 0.8;
+	padding: 15px;
+	width: 75%
+}
+.scrolltext h2 {
+	color:#FFF;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.scrolltext p {
+	color:#FFF;
+}
+#scroller p.scrolllink { text-align:right; margin-top: 10px;}
+#scroller p.scrolllink a { color:#FFF; font-weight: bold; }
+.homebox h3 {
+	padding-left: 30px;	
+}
+.homebox h3.green {
+	background-image: url(images/blog-icon.png);
+	background-repeat:no-repeat;
+	background-position:6px;
+}
+.homebox h3.dblue {
+	background-color: #3B5998;
+	background-image: url(images/facebook-icon.png);
+	background-repeat:no-repeat;
+	background-position:6px;
+}
+.homebox h3.lblue {
+	background-color: #4099FF;
+	background-image: url(images/twitter-icon.png);
+	background-repeat:no-repeat;
+	background-position:6px;
+}
+.homebox h3.brown {
+	background-color: #663300;
+	background-image: url(images/gem-icon.png);
+	background-repeat:no-repeat;
+	background-position:6px;
+}
+p.rfbp-image-wrap {
+	display: none;
+}
+#social {
+	width: 280px;
+}
+#social h2 {
+	
+}
+#social p {
+	font-size: 11px;
+	text-transform:none;
+}
+.sliderimgLi img { padding: 0px!important; margin: 0px!important; border: none!important; }
+.mainSliderDiv { top: -2px; left: -2px!important; }
+.hiddengemform .error { color:#F00; font-size: 10px; font-weight:bold; padding: 0 10px;}
+.sliderimgLi { position: relative; }
+.sliderimgLi .slider-text { position:absolute; bottom: 15px; left: 0px; padding: 15px; font-size: 20px; color:#FFF; background-color: #000; opacity: 0.7; text-transform:capitalize;}
+.content .gform_wrapper {margin-left: 15px; width: 75%; }
+
+/* WooCommerce Classes */
+.beerbox a.button, .homebox input.button, .content .button, #content .button {
+	background-image: none;
+	background:none;
+	background-color:#003300;
+	padding: 10px;
+}
+.woocommerce #content input.button.alt, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce-page #content input.button.alt, .woocommerce-page #respond input#submit.alt, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button.alt {
+	border: none;	
+}
+.woocommerce .sidebox ul.cart_list li, .woocommerce .sidebox ul.product_list_widget li, .woocommerce-page .sidebox ul.cart_list li, .woocommerce-page .sidebox ul.product_list_widget li, .sidebox p.total, .sidebox p.buttons {
+	padding: 15px;
+}
+.button, .alt, .button.alt {
+	background-image: none!important;
+}
+.gform_body input, .gform_body textarea {
+	padding: 10px 4px!important;
+	border: 1px solid #333;	
+}
+.woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale {
+	z-index: 999;
+}
+.woocommerce ul.products li.product .price del, .woocommerce-page ul.products li.product .price del {
+	text-decoration: line-through;	
+}
+.woocommerce ul.products li.product .price .amount, .woocommerce-page ul.products li.product .price .amount {
+	font-size: 20px;	
+}
+.woocommerce ul.products li.product h3, .woocommerce-page ul.products li.product h3 {
+	font-size: 20px!important;	
+	color: #000;
+}
+.content h2 a {
+	font-family: 'Vast Shadow', cursive;
+	font-size: 20px;	
+	color: #000;
+}
